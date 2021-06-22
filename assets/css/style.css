@@ -1,0 +1,611 @@
+@font-face {
+    font-family: "edward";
+    src: url('../fonts/edward.ttf');
+}
+
+body{
+    background-color: rgb(255, 255, 232);
+    margin: 0%;
+}
+nav{
+  display:flex;
+  width:100%;
+  height: auto;
+  background-color: hsla(101, 69%, 76%, 0.911);
+    position: fixed;
+  z-index: 1; 
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.644);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#navbar {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3em;
+    width: 40%;
+    height: auto;
+    margin: auto 10px auto auto;
+    padding-top: 16px;
+    display:flex;
+    justify-content:space-between;
+  
+}
+/* position: fixed permet d'avoir une barre qui reste en position même en scrollant */
+nav a {
+    /* display: none; */
+    text-decoration: none;
+    color: #000000;
+    /* display: inline-block; */
+    text-align: right;   
+    padding:0.5% 0% 0.5% 0%;
+    width: auto;
+    display: flex;
+    justify-content:center;
+}
+/* .button:hover{
+    color: #ffffff;
+    text-decoration-color:white;
+} */
+.bordernav {
+    width: 0px;
+    margin: 0%;
+    padding: 0%;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+ul>li:hover hr {
+    width: 50%;
+    border: 1px solid #722a04;
+    transition: all 500ms ease;
+}
+ul>li:hover .button{
+    color: #722a04;
+    font-weight: bold;
+}
+.fa-bar, .fa-bars {
+    display:none;
+}
+/* display:none permet de cacher un élèment, plus efficace que hidden car il cache aussi son emplacement */
+
+/* #icon {
+    border: 1px solid #b3ec98;
+    border-radius: 100%;
+    padding: 3px;
+} */
+/* border radius a 100% pour faire un effet arrondi */
+
+nav li { 
+    margin:auto;
+    padding:0% ;
+}
+
+/* nav:hover a {
+    color: #86d677;
+    display: inline-block;
+    text-align: center;   
+    padding: 2%;
+  
+} */
+nav ul {
+    
+    width: 100%;
+    justify-content:space-around;
+    text-align: center;
+
+}
+
+
+.header {
+    display:block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-right: 0%;
+    margin-top: 0,8%;
+    justify-content:center;
+    background-color: #ffffff9f;
+    padding-bottom: 8%;
+    padding-top: 2%;
+    box-shadow: 0px 0px 20px 0px rgba(58, 58, 58, 0.685);
+}
+
+/* #logo { */
+   /* relative permet au logo de rester au-dessus */
+    /* position: relative;
+    width: 150px;
+    height: 100%;
+    margin-inline: 45%; */
+    /* animation-name: logo ;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    -webkit-animation-duration: 2s ;
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 2s ;
+    -moz-animation-iteration-count: 3 ;
+    transform-origin: 50% top; */
+/* } */
+/* animation name permet de nommer l'icone d'animation pour lui donner des commandes via @-webkit-keyframes, 
+animation duration est le temps que met l'animation pour une sequence (0% à 100%) et animation itération count est le temps ou l'animation est active (peut se renouveler infiniment via infinite */
+
+#logobreak, .logo {
+    height: 55px;
+    width: 100px;
+    margin-left: 1px ;
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
+    -webkit-animation-duration: 6s ;
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 6s ;
+    -moz-animation-iteration-count: 3;
+}
+/* @ webkit keyframes permet de decrire les actions de l'animation, on peut utiliser webkit-transform: rotate ou spin ou encore left:100px ou right: 100px  etc.*/
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: rotateY(0deg)
+}
+100% {
+    -webkit-transform: rotateY(360deg);
+}
+}
+  @-moz-keyframes logo {
+    0% {
+        -webkit-transform: rotateY(0deg)
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes logo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+}
+
+100% {
+    -webkit-transform: rotateY(360deg);
+}
+
+  }
+
+.Top {
+    background-image: url('../images/cup-3430992_1920.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 150px;
+    margin-top: 3%;
+    box-shadow: 30px 0px 5px 0px rgba(83, 82, 82, 0.637);
+}
+.title {
+    /* display: flex; */
+    color: #419719;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    /* padding-top: 8%; */
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: "edward";
+    padding: 1%;
+    font-size: 6em;
+    align-content: center;
+    
+}
+#ban {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    background-size: cover;
+
+}
+.header p {
+    width: 50%;
+   display: flex;
+   vertical-align: middle;
+   align-items: center;
+   padding-inline: 25%;
+   font-size: 1.6em;
+
+  
+}
+.interline {
+    width: 200px;
+}
+
+h2 {
+    font-family: "edward";
+    text-align: center;
+    font-size: 2.8em;
+    padding: 1% 0% 0% 0%;
+    margin: auto;
+    margin-top: 0%;
+    color: #722a04;
+}
+
+/* partie de ray */
+/* corps de la page, photos galerie */
+
+#container {
+    background-color: rgb(255, 255, 232);
+
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+    
+    font-family:'Calibri';
+    font-size: 20px;
+
+}
+.container1 {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+.container1 .card {
+    display:flex;
+    flex-direction: column;
+    background: #b3ec98;
+}
+.container1 .card:nth-child(even) {
+    flex-direction: column-reverse;
+}
+.container1 .card .imgegalery {
+    position: relative;
+    width: 350px;
+    height: 400px;
+}
+.container1 .card .imgegalery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container1 .card .content {
+    /* position:relative; */
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 .card .content div {
+    padding: 20px;
+    text-align:justify;
+}
+
+
+/* bas de la page, présentation de l'équipe */
+
+#container2 {
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+    display: grid;
+    column-gap: 170px;
+    /* row-gap: 15px; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px 400px auto;
+    grid-template-areas:
+     "title title title"
+     "benjaminimage stephanieimage rayimage"
+     "benjaminname stephaniename rayname";
+}
+#title {
+    grid-area: title;
+    text-align: center;
+    margin-top: -45px ;
+    border-radius: 10px;
+    color: #722a04;
+}
+#benjaminimage {
+    grid-area: benjaminimage;
+}
+.benjaminname {
+    grid-area: benjaminname;
+}
+#stephanieimage {
+    grid-area: stephanieimage;
+}
+.stephaniename {
+    grid-area: stephaniename;
+}
+#rayimage {
+    grid-area: rayimage;
+}
+.rayname {
+    grid-area: rayname;
+}
+
+.photos {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+.photos img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+.photostext {
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: max-content;
+    width:80%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(39, 134, 27, 0.507);
+    color: white;
+  align-items: center;
+  justify-content:center;
+  margin-top: 0%;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  vertical-align: middle;
+  font-size:1,5em;
+  padding:10% 20% 20% 10%;
+}
+
+.photos:hover .photostext {
+    opacity: 1;
+  }
+  .font {
+    font-family: "edward"; 
+    font-size:2em;
+    font-weight: bold;
+  }
+
+  .photos:hover img {
+    filter: blur(2px);
+  }
+.item {
+    text-align:center;
+    background:  #b3ec98;
+    color: #722a04;
+    font-family: "edward";
+    font-size: 2.4em;
+    margin: 0% 0% 5% 0%;
+    padding: 0%;
+}
+
+
+/* partie de ray */
+
+/* partie de ben */
+
+.bottomliste {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 0%;
+    background-color: #b3ec98;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.644);
+
+
+}
+
+.bottomliste a {
+    text-decoration: none;
+    /* Supprime le soulignement d'un lien*/
+    color: black;
+}
+
+ul {
+    list-style: none;
+    /* supprime les puces*/
+}
+
+.network {
+    width: 30px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    padding-bottom: 1%;
+    background-color: #b3ec98;
+    margin-top: 40px;
+}
+
+.grid1 p {
+    line-height: 0.1em;
+}
+
+.réseaux p {
+    display: inline;
+}
+
+.map-responsive {
+    padding-top: 20px;
+    grid-column: 3/8;
+    /* se traduit par : commence a la 3éme colonne finis à la 8éme*/
+    grid-row: 1/2;
+}
+
+.contact {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.horaires {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.réseaux {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.bloc1 {
+    display: flex;
+    justify-content: space-around;
+    /*espace entre mes blocs*/
+    padding-bottom: 20px;
+}
+
+.recherche{
+    margin-top: 30px;
+}
+h3 {font-family: "edward";
+    font-size: 2.4em;
+}
+
+@media screen and (max-width:2200px) {
+    .container1 {
+        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+    }
+    .container1 .card {
+        flex-direction: row;
+        margin: 40px 0;
+    }
+    .container1 .card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .container1 .card .imgegalery,
+    .container1 .card .content {
+        width: 50%;
+    }
+  
+}
+@media screen and (max-width:1080px) {
+    #navbar,.fa-bar,.fa-bars {
+        display:block;
+        justify-content: right;
+        text-align: right;
+        width: 92%;
+    }
+    .Top{
+        padding: 20%;
+        margin: 0%;
+    }
+   .button {
+        display: none;
+        width:100%;
+    }
+    nav{
+        display: block;
+        text-align: left;
+        width:100%;
+    }
+    #navbar:hover {
+        display: block;
+        color: rgb(28, 126, 4);
+        border-bottom: transparent;
+        text-align: left;
+        /* width: 100%; */
+        /* background-color: #ffffff; */
+    }
+    #navbar ul {
+        width: 100%;
+    }
+    nav:hover .button { 
+        display: block;
+        text-align: left;
+        padding: 2%;
+        margin: auto;
+        width: 100%; 
+        
+    }
+/* Le "nav a:hover" est different de nav:hover a", nav a:hover permet de changer l'élèment dès qu'on passe la souris dessus, tandis que nav:hover a change tout les élèments "a"  dès qu'on passe la souris sur la nav   */
+    nav a:hover{
+        display: block;
+        /* margin: auto; */
+        /* width: 100%; */
+    }
+    /* .button {
+        border-bottom: 1px solid black;
+    } */
+}
+
+@media screen and (max-width: 850px) {
+    .container1{
+        width: 100%;
+    }
+    .container1 .card {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .container1 .card:nth-child(even) {
+        flex-direction: column;
+    }
+    .container1 .card .imgegalery,
+    .container1 .card .content {
+        width: 100%;
+    }
+    .container1 .card .content {
+        height: 400px;
+    }
+    .grid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr;
+        gap: 0.2px;
+    }
+    .map-responsive {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contact {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .horaires {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+    }
+    .réseaux {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        text-align: center;
+    }
+    .bloc1 {
+        font-size: 12px;
+    }
+    .bottomliste {
+        font-size: 12px;
+    }
+}   
+/* partie de ben */
+/* responsive pour les mobiles, photos équipe */
+
+
+@media screen and (max-width:720px) {
+    #container2 {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 50%;
+        grid-template-rows: 50px 400px auto 400px auto 400px auto;
+        grid-template-areas:
+            "title"
+            "benjaminimage"
+            "benjaminname"
+            "stephanieimage"
+            "stephaniename" 
+            "rayimage"
+            "rayname";
+}
+}
