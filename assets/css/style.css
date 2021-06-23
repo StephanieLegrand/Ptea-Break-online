@@ -24,7 +24,7 @@ nav{
     font-size: 1.3em;
     width: 40%;
     height: auto;
-    margin: auto 10px auto auto;
+    margin: auto 20px auto auto;
     padding-top: 16px;
     display:flex;
     justify-content:space-between;
@@ -492,12 +492,21 @@ h3 {font-family: "edward";
   
 }
 @media screen and (max-width:1080px) {
-    #navbar,.fa-bar,.fa-bars {
+    .fa-bar,.fa-bars {
         display:block;
         justify-content: right;
         text-align: right;
-        width: 92%;
+        width: 90%;
+        padding-right: 0;
+
     }
+    #navbar{   
+        width: 100%;
+        margin: auto auto auto auto;
+        display: block;
+        padding: 0%;
+
+    } 
     .Top{
         padding: 20%;
         margin: 0%;
@@ -539,10 +548,21 @@ h3 {font-family: "edward";
     /* .button {
         border-bottom: 1px solid black;
     } */
+    #container2 {
+        max-width: 85%;
+        column-gap: 100px;
+    }
 }
 
 @media screen and (max-width: 850px) {
-    .container1{
+    nav {
+        box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    }
+    .header {
+        box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.644);
+    }
+
+    .container1 {
         width: 100%;
     }
     .container1 .card {
@@ -557,7 +577,7 @@ h3 {font-family: "edward";
         width: 100%;
     }
     .container1 .card .content {
-        height: 400px;
+        height: auto;
     }
     .grid1 {
         display: grid;
@@ -595,11 +615,11 @@ h3 {font-family: "edward";
 /* responsive pour les mobiles, photos équipe */
 
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
     #container2 {
         width: 100%;
         height: auto;
-        grid-template-columns: 50%;
+        grid-template-columns: auto;
         grid-template-rows: 50px 400px auto 400px auto 400px auto;
         grid-template-areas:
             "title"
